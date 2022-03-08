@@ -1,0 +1,47 @@
+{
+  "name": "mobile-template",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Renew",
+  "description": "H5业务页面快速开发框架",
+  "scripts": {
+    "dev": "nuxt",
+    "start": "nuxt start",
+    "g": "nuxt generate ",
+    "babel": "babel dist/_nuxt/  -d dist/_nuxt/",
+    "gen": "nuxt generate  && yarn babel && ftp-deploy",
+    "build": "nuxt generate  && yarn babel"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.0",
+    "@wnl/share": "^0.0.1",
+    "@wnl/util": "^1.2.10",
+    "core-js": "^3.9.1",
+    "crypto-js": "^4.1.1",
+    "html2canvas": "^1.0.0-rc.4",
+    "lib-flexible": "^0.3.2",
+    "normalize.css": "^8.0.1",
+    "nuxt": "^2.15.3",
+    "postcss-pxtorem": "^5.1.1",
+    "smoothscroll-polyfill": "^0.4.4",
+    "swiper": "^5.2.3",
+    "vant": "^2.12.10",
+    "vconsole": "^3.3.4",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-clipboard2": "^0.3.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "autoprefixer": "^9.8.6",
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "ftp-deplay": "^1.0.4",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "prettier": "^2.3.0"
+  }
+}
